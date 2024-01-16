@@ -1,0 +1,76 @@
+.owner-and-rate-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.owner-and-rate-box .rate-box {
+  display: flex;
+  justify-content: space-between;
+  width: 98px;
+  height: 18px;
+}
+.owner-and-rate-box .owner-box {
+  display: flex;
+}
+.owner-and-rate-box .owner-box .owner-name {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 67px;
+  height: 33px;
+  font-size: 12px;
+  color: #ff6060;
+}
+.owner-and-rate-box .owner-box .owner-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .owner-and-rate-box {
+    height: 48px;
+  }
+  .owner-and-rate-box .owner-box {
+    display: flex;
+    align-items: center;
+  }
+  .owner-and-rate-box .owner-box .owner-name {
+    font-size: 15px;
+  }
+  .owner-and-rate-box .owner-box .owner-picture {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .owner-and-rate-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .owner-and-rate-box .owner-box {
+    height: 64px;
+  }
+  .owner-and-rate-box .owner-box .owner-picture {
+    width: 64px;
+    height: 64px;
+  }
+  .owner-and-rate-box .owner-box .owner-name {
+    width: 103px;
+    height: 64px;
+    font-size: 18px;
+  }
+  .owner-and-rate-box .rate-box {
+    display: flex;
+    align-items: center;
+    width: 167px;
+    height: 36px;
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=OwnerNamePictureRate.css.map */

@@ -1,0 +1,101 @@
+.house-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.house-card .box-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.house-card .box-card .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 15px 0;
+  width: 300px;
+  border-radius: 10px;
+}
+.house-card .box-card .card::before {
+  content: "";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+  opacity: 0.4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.house-card .box-card .card .card-img {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 255px;
+}
+.house-card .box-card .card .card-box-title {
+  position: absolute;
+  z-index: 20;
+  top: 195px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+}
+.house-card .box-card .card .card-box-title .card-title {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 15px;
+  width: 295.59px;
+  line-height: 25.67px;
+  font-weight: 500;
+  color: #f6f6f6;
+}
+
+@media screen and (min-width: 375px) {
+  .house-card .box-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .house-card .box-card .card {
+    width: 353px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .house-card {
+    display: flex;
+    border-radius: 15px;
+    background: #f6f6f6;
+    margin: 35px 0;
+  }
+  .house-card .box-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .house-card .box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .house-card .box-card .card {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .house-card .box-card .card {
+    width: 340px;
+    height: 340px;
+  }
+}/*# sourceMappingURL=Card.css.map */

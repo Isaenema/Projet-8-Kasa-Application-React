@@ -1,0 +1,115 @@
+.about-box {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+.about-box .box-button-about {
+  display: flex;
+  border: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background: #ff6060;
+  cursor: pointer;
+}
+.about-box .box-button-about .text-icon-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 30px;
+}
+.about-box .box-button-about .text-icon-button .title-button {
+  display: flex;
+  font-size: 13px;
+  color: #f6f6f6;
+  margin-left: 10px;
+}
+.about-box .box-button-about .text-icon-button .fa-chevron-up {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: #f6f6f6;
+}
+.about-box .box-button-about .text-icon-button .fa-chevron-down {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: #f6f6f6;
+}
+.about-box .box-text-about {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+.about-box .box-text-about .text-about {
+  color: #ff6060;
+  line-height: 17.11px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-box {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .about-box .box-button-about {
+    height: 41px;
+  }
+  .about-box .box-button-about .text-icon-button {
+    height: 41px;
+  }
+  .about-box .box-button-about .text-icon-button .title-button {
+    font-size: 18px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-up {
+    font-size: 24px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-down {
+    font-size: 24px;
+  }
+  .about-box .box-text-about .text-about {
+    line-height: 25.67px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-box {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .about-box .box-button-about {
+    margin-top: 30px;
+    height: 52px;
+  }
+  .about-box .box-button-about .text-icon-button {
+    height: 52px;
+  }
+  .about-box .box-button-about .text-icon-button .title-button {
+    font-size: 24px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-up {
+    font-size: 32px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-down {
+    font-size: 32px;
+  }
+  .about-box .box-text-about .text-about {
+    line-height: 25.67px;
+    font-size: 18px;
+  }
+  .about-box .option-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Collapse.css.map */

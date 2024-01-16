@@ -1,0 +1,83 @@
+.box-title-rate-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  .title-rent {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    color: #ff6060;
+  }
+  .location-rent {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: #ff6060;
+  }
+}
+.tag-text {
+  display: flex;
+  margin-bottom: 15px;
+}
+.text-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+  width: 94px;
+  height: 25px;
+  background: #ff6060;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 10px;
+  color: #f6f6f6;
+}
+
+@media screen and (min-width: 768px) {
+  .detail-box .title-rent {
+    font-size: 27px;
+  }
+  .detail-box .location-rent {
+    font-size: 16px;
+  }
+  .text-tag {
+    margin-right: 5px;
+    font-size: 12px;
+    width: 134px;
+  }
+  .owner-and-rate-box .rate-box {
+    width: 147px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .box-title-rate-owner {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  .detail-box {
+    width: 70%;
+  }
+  .detail-box .title-rent {
+    font-size: 36px;
+  }
+  .detail-box .location-rent {
+    font-size: 18px;
+  }
+  .text-tag {
+    margin-right: 10px;
+    font-size: 14px;
+    width: 150px;
+  }
+  .owner-and-rate-box .rate-box {
+    width: 196px;
+  }
+}

@@ -7,6 +7,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const Carrousel = (props) => {
   const [index, setIndex] = useState(0);
+
   const next = () => {
     if (index + 1 === props.pictures.length) {
       setIndex(0);
@@ -14,6 +15,7 @@ const Carrousel = (props) => {
       setIndex(index + 1);
     }
   };
+
   const previous = () => {
     if (index === 0) {
       setIndex(props.pictures.length - 1);
@@ -21,7 +23,7 @@ const Carrousel = (props) => {
       setIndex(index - 1);
     }
   };
-  console.log(props.pictures);
+
   return (
     <div className="slide-box">
       <img
@@ -29,23 +31,27 @@ const Carrousel = (props) => {
         alt="appartement"
         className="img-slide"
       />
-      <div className="arrows-slide">
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          className="arrows_slide_arrow"
-          onClick={previous}
-        />
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          className="arrows_slide_arrow"
-          onClick={next}
-        />
-      </div>
-      <div className="number-img-slide">
-        <span className="display-number">
-          {index + 1}/{props.pictures.length}
-        </span>
-      </div>
+      {props.pictures.length > 1 && (
+        <div className="arrows-slide">
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            className="arrows_slide_arrow"
+            onClick={previous}
+          />
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            className="arrows_slide_arrow"
+            onClick={next}
+          />
+        </div>
+      )}
+      {props.pictures.length > 1 && (
+        <div className="number-img-slide">
+          <span className="display-number">
+            {index + 1}/{props.pictures.length}
+          </span>
+        </div>
+      )}
     </div>
   );
 };

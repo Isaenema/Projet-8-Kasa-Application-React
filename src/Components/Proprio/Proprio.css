@@ -1,0 +1,17 @@
+.proprio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+.proprio .proprio__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.proprio .proprio__name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: right;
+}/*# sourceMappingURL=Proprio.css.map */
